@@ -1,38 +1,171 @@
-.App {
+*{
+  font-family: 'Press Start 2P';
+}
+
+.header-color {
+ background: #CAC531;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F3F9A7, #CAC531);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F3F9A7, #CAC531); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.landing-grid {
+  overflow: scroll;
+  background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.project-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap; 
+  background: #833ab4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.projects-grid {
+  padding: 10px;
+}
+/* Resume Page css */
+.resume-right-col {
+  background: #27221F;
+  color: white;
+  padding: 2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* contact page css */
+
+.contact-body {
+  
+  padding-top: 2em;
+
+}
+
+.contact-grid {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  background: black;
+  color: yellow;
+}
+.contact-left{
+  flex:1;
+}
+
+@media screen and (max-width: 480px) {
+  .contact-right {
+    font-size: 15px;
+    align-items: flex-start;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contact-grid hr {
+  border-top: 5px dotted yellow;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-list i {
+  font-size: 66px;
+  padding-right: 5rem;
+}
+.contact-list {
+  
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+}
+
+/* contact page css */
+
+.avatar-img {
+  height: 250px;
+  padding: 4em 0 4em 0;
+  border-radius: 45%
+  
+
+}
+
+.banner-text {
+  background-color: yellow;
+  opacity: .8;
+  width: 75%;
+  margin: auto;
+  border-color: red;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 6%;
+}
+
+i {
+  color: red;
+}
+
+.banner-text h1 {
+  font-size: 66px;
+  font-weight: bold;
+  color: red;
+}
+
+.banner-text hr {
+  border-top: 5px dotted red;
+  width: 50%;
+  margin: auto;
+}
+
+.banner-skills {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.banner-text span {
+  color: red;
+  font-size: 20px;
+  padding: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+span:hover, i:hover, .links-hover:hover {
+  transform: scale(1.2);
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: auto;
+}
+
+.social-links i {
+  color: red;
+  font-size: 5em;
+  padding: 8px;
+}
+
+.gitlink i {
+  color: red;
+  font-size: 3em;
+  padding: 8px;
+}
+
+p i {
+  font-size: 40px;
+  padding-right: 3rem;
+}
+
+.iconify {
+    font-size: 40px;
+  padding-right: 3rem;
 }
