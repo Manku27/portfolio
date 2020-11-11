@@ -8,11 +8,37 @@ class Landing extends Component {
       <div style={{width: '100%', margin: 'auto'}}>
         <Grid className="landing-grid">
           <Cell col={12}>
-            <img
-              src="https://scontent.fccu4-2.fna.fbcdn.net/v/t1.0-9/s720x720/124154602_3816121535072961_2640493552949820224_o.jpg?_nc_cat=110&ccb=2&_nc_sid=730e14&_nc_ohc=CA8on6j-IZgAX8SMdwf&_nc_ht=scontent.fccu4-2.fna&tp=7&oh=515e47e8d2f4b7af407cf06f0ded8ee8&oe=5FC92822"
-              alt="avatar"
-              className="avatar-img"
-              />
+
+            {/*mario*/}
+            <div className="sky">
+  <div className="scorebar">
+    <p><span className="topline-mario">MANKU</span>
+      <span className="topline-world">WORLD</span>
+      
+      <span className="bottomline-score">OOOOOO</span>
+      <span className="bottomline-coin"><img src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/Coin.gif" height="40px"/> x OO</span>
+      <span className="bottomline-world">1 - 1</span>
+      
+    </p>
+  </div>
+  <img className="cloud" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/CloudSingle.gif"/>
+  <img className="cloud" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/CloudDouble.gif"/>
+  <img className="cloud" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/CloudTriple.gif"/>
+</div>
+<div className="ground">
+  <img className="bush" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/BushSingle.gif" height="70px;"/>
+  <img className="bush" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/BushDouble.gif" height="70px;" />
+  
+
+  <div className="mario"></div>
+
+</div>
+
+            {/*mario*/}
+
+
+
+            
 
             <div className="banner-text">
               <h1>Full Stack Web Dev</h1>
@@ -29,7 +55,8 @@ class Landing extends Component {
               <span>SQL//</span> 
               <span>Python</span>
             </div> 
-
+            <hr/>
+            <br/>
         <div className="social-links">
 
           {/* LinkedIn */}

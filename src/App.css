@@ -3,18 +3,12 @@
 }
 
 .header-color {
- background: #CAC531;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #F3F9A7, #CAC531);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #F3F9A7, #CAC531); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+ background: #548CFF;  /* fallback for old browsers */
 }
 
 .landing-grid {
   overflow: scroll;
-  background: #000000;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: #548CFF;  /* fallback for old browsers */
   text-align: center;
   position: fixed;
   top: 0;
@@ -55,35 +49,40 @@ background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+
   display: flex;
   text-align: center;
   flex-wrap: wrap;
-  background: black;
-  color: yellow;
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/c/c1/Bat-Signal_%28Batman_The_Animated_Series%29.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  color:  yellow;
 }
 .contact-left{
   flex:1;
+  
+}
+.contact-left p{
+  font-size: 20px;
 }
 
-@media screen and (max-width: 480px) {
-  .contact-right {
-    font-size: 15px;
-    align-items: flex-start;
-  }
-}
+
+
 
 .contact-grid hr {
-  border-top: 5px dotted yellow;
+  border-top: 5px dotted  #39ff14;
   width: 50%;
   margin: auto;
 }
 
 .contact-list i {
   font-size: 66px;
-  padding-right: 5rem;
+  padding: 10px;
 }
 .contact-list {
   
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  font-size: 20px;
 }
 
 /* contact page css */
@@ -91,36 +90,47 @@ background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+
 .avatar-img {
   height: 250px;
   padding: 4em 0 4em 0;
-  border-radius: 45%
-  
-
+  border-radius: 25%;
 }
 
 .banner-text {
-  background-color: yellow;
+  background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   opacity: .8;
   width: 75%;
   margin: auto;
-  border-color: red;
+  border-color: #39ff14;
   border-width: 5px;
   border-style: solid;
   border-radius: 6%;
+
 }
 
-i {
-  color: red;
+.banner-text h1 {
+  font-family: 'Press Start 2P';
+}
+
+i , .iconify{
+  color: #39ff14;
+}
+
+i:hover , .iconify:hover{
+  background: black;
+  box-shadow: 0 0 10px #39ff14, 0 0 40px #39ff14, 0 0 80px #39ff14;
 }
 
 .banner-text h1 {
   font-size: 66px;
   font-weight: bold;
-  color: red;
+  color: #39ff14;
 }
 
 .banner-text hr {
   border-top: 5px dotted red;
   width: 50%;
   margin: auto;
+
 }
 
 .banner-skills {
@@ -130,13 +140,14 @@ i {
 }
 
 .banner-text span {
-  color: red;
+  color: #39ff14;
   font-size: 20px;
   padding: 1em;
 }
 
 
-span:hover, i:hover, .links-hover:hover {
+
+span:hover, i:hover, .iconify:hover, .links-hover:hover {
   transform: scale(1.2);
 }
 
@@ -149,23 +160,215 @@ span:hover, i:hover, .links-hover:hover {
 }
 
 .social-links i {
-  color: red;
   font-size: 5em;
   padding: 8px;
 }
 
 .gitlink i {
-  color: red;
   font-size: 3em;
   padding: 8px;
 }
 
 p i {
   font-size: 40px;
-  padding-right: 3rem;
+  padding: 8px;
 }
 
 .iconify {
     font-size: 40px;
-  padding-right: 3rem;
+  padding-right: 8px;
+}
+
+/* mario*/
+.topline-mario{position:absolute;top: 90px;left:2%;}
+.topline-world{position:absolute; left:55%;top: 90px;left:70%;}
+
+.bottomline-score{position:absolute; top: 110px;left:2%;}
+.bottomline-coin{position:absolute; top: 100px; left:30%;}
+.bottomline-world{position:absolute; top: 110px; left:70%;}
+
+
+.sky, .ground{
+    position: relative; /*Because we want to position items on and in them!*/
+}
+
+.sky{
+    height: 30%;
+    background-color: #548CFF;    
+}
+.ground{ 
+    height: 10%;
+    background-color: #C84C0C; 
+    background-image: url('https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/groundblock.png');
+        
+}
+.scorebar{    
+    position: absolute;
+    height: 120px;
+    width:100%;    
+    
+       
+        
+        color: white;
+    
+    
+    line-height: 0.2;
+}
+.cloud{
+    position: fixed;
+    height: 100px;
+    
+}
+    .cloud:nth-child(2){
+        top: 120px; 
+        -webkit-animation: wind 80s both infinite linear reverse; 
+                animation: wind 80s both infinite linear reverse;
+    }
+    .cloud:nth-child(3){
+        top: 280px;
+        -webkit-animation: wind 50s both infinite linear reverse;
+                animation: wind 50s both infinite linear reverse;
+    }
+    .cloud:nth-child(4){
+        top: 450px;
+        -webkit-animation: wind 30s both infinite linear reverse;
+                animation: wind 30s both infinite linear reverse;
+    }
+
+    .brick{     
+        position: fixed;        
+        margin: -2px;
+    }
+        .brick:nth-child(1){
+            left:600px;
+        } 
+        .brick:nth-child(2){
+            left:670px;
+        } 
+        .brick:nth-child(3){
+            left:740px;
+        } 
+        .brick:nth-child(4){
+            left:810px;
+        } 
+.bush{
+    position: absolute;
+    top:-70px;
+}
+    .bush:nth-child(1){
+        left: 5vw;   
+    }
+    .bush:nth-child(2){
+        left: 80vw;   
+    }
+ 
+
+.mario{
+    position: absolute;
+    width: 71px;
+    height: 72px;
+    background: url('https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/mariowalking/result.png') left center;    
+    top:-70px;
+    left:0px;
+    
+    -webkit-animation: play 0.8s steps(4) infinite,
+                run 7s both infinite linear;
+    
+            animation: play 0.8s steps(4) infinite,
+                run 7s both infinite linear;
+}
+@-webkit-keyframes play{
+    100%{background-position: -284px;}
+}
+@keyframes play{
+    100%{background-position: -284px;}
+}
+@-webkit-keyframes run{
+    from{left: -200px;}
+    to{left: 100%;}
+}
+@keyframes run{
+    from{left: -200px;}
+    to{left: 100%;}
+}
+@-webkit-keyframes wind{
+    from{left: -300px;}
+    to{left: 100%;}
+}
+@keyframes wind{
+    from{left: -300px;}
+    to{left: 100%;}
+}
+
+
+.aboutdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap; 
+  max-width: 100%;
+}
+
+.aboutdiv-img{
+  width: 50vw;
+}
+.topright {
+  position: absolute;
+  top: 12vh;
+  right: 4vw;
+  height: 20vh;
+  
+}
+
+.aboutdiv a {
+  color: white;
+  font-size: 120%;
+}
+
+.aboutdiv h1 {
+  font-weight: bold;
+  color:white;
+  text-decoration: underline ;
+}
+
+.aboutdiv h2 {
+  font-weight: bold;
+  color:white;
+  text-decoration: underline ;
+}
+.aboutdiv h3 {
+  font-weight: bold;
+  color:white;
+  text-decoration: underline ;
+}
+.aboutdiv h4 {
+  font-weight: bold;
+  color:white;
+  text-decoration: underline ;
+}
+
+@media screen and (max-width: 480px) {
+  .contact-right {
+    font-size: 15px;
+    align-items: flex-start;
+  }
+  .banner-text h1 {
+  font-size: 25px;
+}
+  .banner-text span { 
+  font-size: 15px;
+}
+.social-links i {
+  font-size: 3em;
+}
+.bush:nth-child(2){
+        display: none;   
+    }
+    .contact-list {
+      font-size: 15px;
+    }
+    .aboutdiv-img{
+  width: 90vw;
+}
 }

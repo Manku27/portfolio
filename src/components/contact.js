@@ -7,11 +7,11 @@ class Contact extends Component {
         <div className="contact-grid">
           <div className="contact-left">
             <h2>Mayank Jhunjhunwala</h2>
-            <img
+            {/*<img
               src="https://scontent.fccu4-1.fna.fbcdn.net/v/t1.0-9/17098661_1494348187250319_8033656166207042985_n.jpg?_nc_cat=101&ccb=2&_nc_sid=174925&_nc_ohc=LuFlk2xSODgAX8Wz6Nt&_nc_ht=scontent.fccu4-1.fna&oh=1c12a523a43d4bdbb874ba197defa3e9&oe=5FC9DA87"
               alt="avatar"
               style={{height: '250px'}}
-               />
+               />*/}
              <p style={{ width: '75%', margin: 'auto', paddingTop: '1em'}}>I am very enthusiastic about the ability of modern tech to solve real world problems.</p>
           </div>
           <div className="contact-right">
@@ -25,6 +25,13 @@ class Contact extends Component {
                       <i className="fa fa-phone-square" aria-hidden="true"/>
                     </a>
                    
+              </div> 
+              <div>                 
+                    7477367506  &nbsp;
+                    <a href="https://wa.me/7477367506/?text=Yo">
+                      <i className="fab fa-whatsapp-square" aria-hidden="true"/>
+                    </a>
+                   
               </div>                   
               <div>
                     jjmayank98@gmail.com  &nbsp;
@@ -32,7 +39,8 @@ class Contact extends Component {
                       <i className="fa fa-envelope" aria-hidden="true"/>
                     </a>
                     
-              </div>                      
+              </div>
+
             </div>
           </div>
         </div>

@@ -9,7 +9,7 @@ class ProjectCards extends Component {
 	            <CardTitle style={{color: 'yellow', background:"black"}} ><strong>{this.props.title}</strong></CardTitle>
 	            <CardText>{this.props.text}</CardText>
 	            <CardActions border>
-	              <a href={this.props.glink} target="_blank" rel="noreferrer" className="gitlink"><i className="fa fa-github-square" aria-hidden="true" /></a>
+	              <a href={this.props.glink} target="_blank" rel="noreferrer" className="gitlink"><i className="fab fa-github" aria-hidden="true" /></a>
 	            </CardActions>
 	          </Card>
 	          <br/><br/>
